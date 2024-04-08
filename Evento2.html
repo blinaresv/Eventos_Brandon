@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento 2</title>
+</head>
+<body>
+<h2> Ejercicio Onchange</h2>
+<input type="text" id="nombre" onchange="saludar()">
+<script>
+  function saludar() {
+    const nombre = document.getElementById("nombre").value;
+    alert(`¡Hola, ${nombre}! Bienvenido al ejercicio de cambio de nombre.`);
+  }
+</script>
+</body>
+</html>
+
+

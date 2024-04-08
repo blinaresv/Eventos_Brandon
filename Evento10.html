@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evento 10</title>
+</head>
+<body>
+<h2>Ejercicio Onselct</h2>
+<input type="text" id="miInput" value="Selecciona este texto" onselect="seleccionarTexto()">
+
+<script>
+function seleccionarTexto() {
+    var inputElement = document.getElementById("miInput");
+    var textoSeleccionado = inputElement.value.substring(inputElement.selectionStart, inputElement.selectionEnd);
+    alert("Texto seleccionado: " + textoSeleccionado);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento9</title>
+</head>
+<body>
+<H2>Ejercicio Onmousedown</H2>
+<div id="mensaje">Pulsar un botón del ratón y no soltarlo</div>
+<script>
+var mensajeElement = document.getElementById("mensaje");
+mensajeElement.onmousedown = function(event) {
+    mensajeElement.innerHTML = "Has presionado un botón del ratón";
+};
+mensajeElement.onmouseup = function(event) {
+    mensajeElement.innerHTML = "Has soltado el botón del ratón";
+};
+</script>
+</body>
+</html>
+
